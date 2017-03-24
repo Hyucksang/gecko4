@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box; /* make box size as border-box */
+}
+
+.container {
+    width:80%;
+    margin-left: auto;
+    margin-right: auto; <--width 80이라 자동으로 10 10 씩 보냄>
+}
+
+ul {
+    list-style: none; /* menu에 나오는 점 없애버리기 */
+}
+
+/* header*/
+.header {
+    display:flex;                    
+    flex-direction: row;          /* 가로로 만들기(옆으로 올리기*/
+    flex-wrap: wrap;
+    justify-content : space-between; 
+    align-items : center; /* 부모와 자식의 관계를 상하를 가운데로 */
+    
+}
+
+.menu {
+    display:flex;
+    flex-direction : row;
+    flex-wrap: space-between;
+}
+
+li{
+    margin-left: 10px;
+}
+
+/* landing */
+.landing {
+    background-image : url(/image/likelion4.jpg); /*배경 지정 */
+    background-size : cover;
+    background-position: center center; /*상하 - 좌우 */
+    width : 100%;
+    height : 600px;
+    display:flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom:15px;
+}
+
+.landing_content {
+    color : #fff;
+}
+
+.landing_title {
+    font-size:70px;
+    text-align : center;
+}
+
+.landing_subtitle {
+    font-size : 50px;
+    text-align : center;
+    
+}
+
+.landing_content {
+    width :80%;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*main*/
+.main {
+    display: flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+    justify-content: sapce-between;
+}
+.article_size {
+    width: 30%;
+    text-align: center;
+}
+
+.img_size {
+    width:80%;
+}
+
+/*footer */
+.footer {
+    padding-top : 10px;
+    padding-bottom : 10px;
+    background-color: #181818;
+}
+.footer_content {
+    width:30%;
+    margin-right: auto;
+    margin-left:auto;
+    color: #fff;
+    
+    display: flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    justify-content : space-between;
+}
